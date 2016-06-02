@@ -1,0 +1,180 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/elements/_header.jade
+	include block_html/elements/_const.jade
+
+	//Header
+	.header
+		.top-menu
+			.top-menu-left
+				a(href="#about" rel='m_PageScroll2id') Обо мне
+				a(href="#solutions" rel='m_PageScroll2id') Решения
+				a(href="#portfolio" rel='m_PageScroll2id') Портфолио
+			.logo-head
+				.logo-head-el
+					a(href="/")
+						img(src="img/logo-top.png", alt="")
+			.top-menu-right
+				a(href="#clients" rel='m_PageScroll2id') Клиенты
+				a(href="#cont" rel='m_PageScroll2id') Контакты
+				a(href="#" ) Агенствам
+				
+	//Main-slider
+	section.section-slider
+		.filter
+		.main-slider-slogan ЮРА СТЫРО - УСПЕХ <br> ВАШЕГО МЕРОПРИЯТИЯ! 
+		.main-slider.owl-carousel
+			.main-slider-el(style="background-image:url('img/main-slider.jpg')")
+			.main-slider-el(style="background-image:url('img/main-slider-2.jpg')")
+		.mouse-icon
+			img(src="img/mouse.png", alt="")
+	//Section-About
+	section.section-about#about
+		.about-wraper
+			.about-img
+				img(src="img/about.png", alt="")
+			.about-info
+				.about-title Обо мне
+				.about-text
+					| Я профессиональный московский ведущий, шоумен, конферансье с хорошим чувством юмора, стиля и такта.  За 15 лет работы в Event-индустрии я провел огромное количество мероприятий разного формата. Я чувствую публику, владею импровизацией и техникой жанра Stand Up. Уверенность в себе и умение владеть словом позволяет мне быть правдивым, что несомненно, располагает к себе гостей.
+				.about-line
+				.about-slogan
+					| Я сделаю Ваш праздник ярким, незабываемым, и проведу его на высшем уровне! 
+				
+	//Section-Concept
+	section.section-concept#solutions
+		.concept-wraper
+			.concept-head
+				.concept-head-title Необычные концептуальные решения 
+				.concept-el
+					.concept-el-head
+						.concept-el-head-icon
+							img(src="img/sport.svg", alt="")
+						.concept-el-head-title Спортивные
+					.concept-el-text Шоу-программы на открытом воздухе, спортивные соревнования и тимбилдинги – вот среда, в которой возникает дружба сотрудников больших компаний. 
+
+			.concept-info
+				.concept-el
+					.concept-el-head
+						.concept-el-head-icon
+							img(src="img/triumph.svg", alt="")
+						.concept-el-head-title Торжественные
+					.concept-el-text Я сделаю так, чтобы вы оказались в сказочной атмосфере необыкновенного события, будь то свадьба, день рождения или юбилей!
+
+				.concept-el
+					.concept-el-head
+						.concept-el-head-icon
+							img(src="img/corp.svg", alt="")
+						.concept-el-head-title Корпоративные 
+					.concept-el-text Харизма и чувство стиля помогают мне оживить любое мероприятие, проведя его на высшем уровне – будь то новогодняя корпоративная вечеринка, promo-event или презентация.
+
+
+				.concept-el
+					.concept-el-head
+						.concept-el-head-icon
+							img(src="img/order.svg", alt="")
+						.concept-el-head-title Заказные 
+					.concept-el-text Специальные мероприятия, важные церемонии, взрывные мальчишники и девичники, написание сценариев – я великолепно справляюсь с любыми задачами, устраивая настоящее шоу! 
+
+	//Section-baner
+	section.section-baner
+		.filter
+		.baner-wraper
+			.baner-slogan
+				img(src="img/baner-slogan.png", alt="")
+
+	//Section-baner
+	section.section-advant
+		.advant-wraper
+			.advant-el
+				.advant-el-icon
+					img(src="img/micr.svg", alt="")
+				.advant-el-text 15 лет опыта: КВН, Stand Up, шоу-программы.
+
+			.advant-el
+				.advant-el-icon
+					img(src="img/hipster.svg", alt="")
+				.advant-el-text Современный сценарий, профессиональное ведение в европейском стиле
+
+			.advant-el
+				.advant-el-icon
+					img(src="img/hands.svg", alt="")
+				.advant-el-text Заключение договора, предоставление гарантий.
+
+			.advant-el
+				.advant-el-icon
+					img(src="img/people.svg", alt="")
+				.advant-el-text Индивидуальный подходк каждому заказчику
+
+			.advant-el
+				.advant-el-icon
+					img(src="img/fly.svg", alt="")
+				.advant-el-text Гастролирую по России и СНГ, а также веду мероприятия за рубежом!
+
+	//Section-portfolio
+	section.section-portfolio#portfolio
+		.portfolio-wraper
+			.portfolio-head
+				.portfolio-head-title Портфолио
+				.portfolio-head-toggle
+					.portfolio-head-toggle-el(data-el="photo").portfolio-active Фото
+					.portfolio-head-toggle-el(data-el="video") Видео
+			.portfolio-slider(data-type="photo").owl-carousel
+				- for (var b = 0; b < 3; b++)
+					.portfolio-slider-el
+						- for (var a = 0; a < 12; a++)
+							.portfolio-img
+								a(href="img/baner-1.jpg")
+									img(src="img/baner-1.jpg", alt="" rel="photo")
+			.portfolio-slider(data-type="video").owl-carousel.hidden
+				- for (var b = 0; b < 3; b++)
+					.portfolio-slider-el
+						- for (var a = 0; a < 12; a++)
+							.portfolio-img
+								a(href="img/main-slider-2.jpg")
+									img(src="img/main-slider-2.jpg", alt="" rel="video")
+
+	//Section-portfolio
+	section.section-clients#clients
+		.clients-wraper
+			.clients-title Клиенты
+			.clients-label
+				- for (var a = 1; a < 11; a++)
+					.clients-label-img
+						img(src="img/clients-#{a}.png", alt="")
+
+	//Section-contact
+	section.section-contact#cont
+		.filter
+		.contact-wraper
+			.contact-slogan
+				img(src="img/slogan-contact.png", alt="")
+			.contact-form
+				form(action="")
+					input(type="text" placeholder="Ваше Имя")
+					input(type="phone" placeholder="Ваш Телефон")
+					input(type="email" placeholder="Ваша почта")
+					button Заказать
+	
+	//Section-footer
+	section.section-footer
+		.footer-wraper
+			.footer-logo
+				img(src="img/logo-footer.png", alt="")
+			.footer-number +7 964 595-11-43
+			.footer-email contact@yurastyro.ru
+			.footer-soc
+				a(href="#" rel="nofollow" target="_blank")
+					img(src="img/vk.png", alt="")
+				a(href="#" rel="nofollow" target="_blank")
+					img(src="img/facebook.png", alt="")
+				a(href="#" rel="nofollow" target="_blank")
+					img(src="img/inst.png", alt="")
+			.footer-comp 
+				| Сайт сделан в 
+				a(href="") EMMA
+//Include footer
+include ./block_html/_script.jade
+

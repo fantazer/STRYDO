@@ -1,0 +1,94 @@
+flex(a){
+	if(a=='mid'){
+		display: flex;
+		justify-content: center;
+	  align-items: center;
+	}
+	if(a==between){
+		display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+	if(a==around){
+		display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+	}
+}
+
+bgi(a){
+	background url('../img/'+a) no-repeat;
+}
+
+tr(a){
+	transition a .4s
+} 
+
+font(a){
+	if(a==ubuntu){
+		font-family: 'Ubuntu';
+	}
+	if(a==pt){
+  	font-family: 'PT Sans';
+	}
+	if(a==zopa){
+  	font-family: 'ZopaCyr';
+	}
+}
+
+but-flat(a,b,c,d=10px,e=20px){
+	border: 0;
+  background: a;
+  color: b;
+  padding: d e;
+  width: c;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px darken(a, 45%); 
+}
+
+f()
+	display flex
+fl()
+	flex-flow column
+fw()
+	flex-wrap wrap
+	
+cp()
+	&:hover
+		cursor pointer
+round()
+	border-radius 50%
+bsh()
+	box-shadow 0px 3px 8px #e3e3e3
+
+brd()
+	border 1px solid grey
+	
+placeholder()
+	input::-webkit-input-placeholder 
+		color:#565d6b
+	input::-moz-placeholder
+		color:#565d6b
+	input:-moz-placeholder
+		color:#565d6b
+	input:-ms-input-placeholder
+		color:#565d6b
+		
+//main cont
+center(val)
+	*zoom: 1
+	width: auto
+	max-width: val
+	float: none
+	display: block
+	margin-right: auto
+	margin-left: auto
+	padding-left: 0
+	padding-right: 0
+	&:before,
+	&:after 
+		content: ''
+		display: table
+	&:after 
+		clear: both

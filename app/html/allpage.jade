@@ -1,0 +1,17 @@
+//Include style
+include block_html/_style.jade
+body.allpage
+	//Include header
+	include block_html/elements/_header.jade
+	include block_html/elements/_const.jade
+	wraper
+		h1 Список страниц
+		- each page in pages
+			a(href="#{page.href}") #{page.name} <br>
+			
+
+
+//Include footer
+include block_html/_script.jade
+
+

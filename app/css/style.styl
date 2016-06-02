@@ -1,0 +1,385 @@
+@import "icon/*"
+@import 'rupture'
+@import "variable/*"
+@import "include/*"
+@import "icon/sprite.css"
+//@import "part.styl"
+
+rupture.scale = 0 400px 600px 780px 960px 1300px
+rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
+
+input 
+	outline 0
+.main-cont
+	center(980px)
+	padding 0 10px
+	position relative
+	height 100%
+body
+	font-family 'panton', Arial, sans-serif;
+	background #0d0d0d
+	color white
+.hidden
+	display none!important
+.header
+	position fixed
+	height 100px
+	top 0
+	left 0
+	width 100%
+	z-index 110
+	flex(mid)
+	background #0d0d0d
+.header-active
+	color #11d1cc!important
+.top-menu
+	flex(between)
+	width 980px
+	height 100px
+	padding 0 10px
+	a
+		color white
+		font-family Panton
+		font-size 14px
+		font-weight 400
+		margin-top 30px
+		tr(all)
+		&:hover
+			color #11d1cc
+.top-menu-left
+	flex(between)
+	width 35%
+	
+.logo-head
+	width 180px
+	height 180px
+	margin-top 60px
+	flex(mid)
+	round()
+	background #0d0d0d
+	img
+		margin 0 auto
+.top-menu-right
+	flex(between)
+	width 35%
+	
+section
+	width 100%
+	height 100vh
+	position relative
+
+//Slider
+.filter
+	position absolute
+	top 0
+	left 0
+	height 100vh
+	width 100%
+	opacity .65
+	background black
+	z-index 100
+.main-slider
+	height 100vh
+	width 100%
+	position absolute
+	top 0px
+	left 0px
+	z-index 10
+.main-slider-slogan
+	color white
+	font-size 48px
+	font-weight 600
+	text-transform uppercase
+	text-align center
+	position relative
+	z-index 100
+.main-slider-el
+	background-size cover
+	height 100vh
+	width 100%
+	background-position center center
+
+.section-slider
+	flex(mid)
+	
+.mouse-icon
+	position absolute
+	bottom 40px
+	z-index 100
+	left 50%
+	margin-left -10px
+	
+
+//About
+
+.section-about
+	flex(mid)
+.about-wraper
+	center(980px)
+	padding 0 10px
+	f()
+.about-img
+	width 30%
+	margin-right 5%
+	img
+		round()
+		border 2px solid #11d1cc
+.about-info
+	width 65%
+.about-title
+	color white
+	font-size 48px
+	font-weight 600
+	line-height 58px
+	margin-bottom 20px
+.about-text
+	color white
+	font-size 16px
+	font-weight 400
+	line-height 24px
+.about-line
+	width 60px
+	height 2px
+	background-color #11d1cc
+	margin 20px 0
+.about-slogan
+	font-family Panton
+	font-size 24px
+	font-weight 600
+	line-height 30px
+
+//Concept
+
+.section-concept
+	flex(mid)
+.concept-wraper
+	center(980px)
+	padding 0 10px
+.concept-head
+	flex(between)
+	margin-bottom 10%
+.concept-head-title
+	font-size 48px
+	font-weight 600
+	line-height 58px
+	width 25%
+.concept-el
+	width 30%
+.concept-el-head
+	margin-bottom 20px
+	f()
+.concept-el-head-icon
+	img
+		width 28px
+		height 28px
+.concept-el-head-title
+	margin-left 20px
+	font-size 24px
+	font-weight 600
+	font-family 'pantonsemibold'
+.concept-el-text
+	font-size 16px
+	font-weight 400
+	line-height 26px
+.concept-info
+	flex(between)
+	align-items flex-start
+.baner-wraper
+	center(960px)
+	height 100vh
+	flex(mid)
+.section-baner
+	background-image: url('../img/baner-1.jpg')
+	background-size cover
+.baner-slogan
+	z-index 100
+	position relative
+	margin-left 50%
+	img
+		width 100%
+		
+//Advant
+.section-advant
+	center(980px)
+	padding 0 10px
+	flex(mid)
+.advant-wraper
+	flex(between)
+	align-items flex-start
+.advant-el
+	width 18%
+	flex(mid)
+	fl()
+.advant-el-icon
+	img
+		width 180px
+		flex(mid)
+.advant-el-text
+	font-size 15px
+	font-weight 400
+	line-height 26px
+	margin-top -30px
+
+.section-portfolio
+	flex(mid)
+.portfolio-wraper
+	center(980px)
+	padding 0 10px
+	width 100%
+.portfolio-head
+	margin-bottom 25px
+	flex(between)
+.portfolio-head-title
+	font-size 48px
+	font-weight 600
+	line-height 48px
+.portfolio-head-toggle
+	flex(mid)
+.portfolio-head-toggle-el
+	font-size 24px
+	font-weight 400
+	margin-right 40px
+	width 100%
+	position relative
+	cp()
+.portfolio-active
+	&:before
+		content ''
+		position absolute
+		height 3px
+		width 100%
+		background #11CCC7
+		bottom -10px
+		left 0px
+//.portfolio-slider
+.portfolio-slider-el
+	flex(between)
+	fw()
+.portfolio-img
+	width 24%
+	margin-bottom 1%
+
+.owl-dots
+	flex(mid)
+	margin-top 40px
+.owl-dot
+	width 10px
+	height 10px
+	round()
+	opacity 0.14
+	background-color #11d1cc
+	margin-right 10px
+.owl-dot.active
+	opacity 1
+	
+.section-clients
+	flex(mid)
+.clients-wraper
+	center(980px)
+	padding 0 10px
+.clients-title
+	margin-bottom 90px
+	text-align center
+	font-size 48px
+	font-weight 600
+	line-height 48px
+.clients-label
+	flex(between)
+	fw()
+.clients-label-img
+	width 17%
+	img
+		margin 0 auto
+		margin-bottom 60px
+
+.section-contact
+	flex(mid)
+	background-image: url('../img/baner-contact.jpg')
+	background-size cover
+//.filter
+.contact-wraper
+	center(980px)
+	padding 0 10px
+	z-index 100
+	flex(mid)
+.contact-slogan
+	width 70%
+.contact-form
+	width 30%
+	form
+		input
+			width 100%
+			background none
+			border 0px
+			border-bottom 1px solid white
+			font-size 24px
+			font-weight 300
+			margin-bottom 20px
+			&:focus
+				border-bottom 2px solid #11d1cc
+		button
+			border 2px solid #11d1cc
+			border-radius 30px
+			font-size 24px
+			font-weight 400
+			text-transform uppercase
+			width 100%
+			background none
+			height 60px
+			margin-top 60px
+			tr(all)
+			&:hover
+				background #11d1cc
+
+//Footer
+.section-footer
+	flex(mid)
+.footer-wraper
+	flex(around)
+	fl()
+	height 70%
+	padding-top 100px
+.footer-logo
+.footer-number
+	font-size 60px
+	font-weight 600
+	text-transform uppercase
+.footer-email
+	font-size 24px
+	font-weight 400
+.footer-soc
+	flex(between)
+	width 30%
+	a
+		font-size 100%
+		display inline-block
+		background-repeat no-repeat
+		background-size cover
+.footer-comp
+	font-size 10px
+	font-weight 400
+	a
+		color white
+		border-bottom 1px solid #11d1cc
+
+.section-lock
+	background-image: url('../img/baner-1.jpg')
+	background-size cover
+.section-lock-img
+	width 290px !important
+	margin-bottom 20%
+.lock-text
+	color white
+	font-family Panton
+	font-size 38px
+	font-weight 400
+	text-align center
+	span
+		color #11d1cc
+.lock-wraper
+	z-index 110
+	position absolute
+	flex(mid)
+	fl()
+	top 30%
+	right 10%
